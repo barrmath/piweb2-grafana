@@ -7,5 +7,11 @@ services:
     restart: unless-stopped
     volumes:
       - grafana:/var/lib/grafana
+    networks:
+      - grafanaV6
     ports:
      - '4000:3000'
+networks:
+  grafanaV6:
+    driver: bridge
+    enable_ipv6: true
