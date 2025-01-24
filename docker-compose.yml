@@ -5,6 +5,8 @@ services:
     image: piweb-grafana
     container_name: grafana
     restart: unless-stopped
+    env_file:
+      - django.env
     volumes:
       - grafana:/var/lib/grafana
     ports:

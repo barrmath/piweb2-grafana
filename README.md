@@ -25,6 +25,9 @@ construire image:
 podman build -f Dockerfile -t piweb-grafana
 ```
 
+Si besoin, ajouter ou modifier les variables d'environnement pour le docker de grafana avec le fichier grafana.env
+(j'ai ajouter le nom de mon site en root-url par exemple)
+
 Démarrage grafana :
 
 ```shell
