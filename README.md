@@ -1,7 +1,13 @@
 # piweb2-grafana
-grafana sur données education nationale niveau college
 
-Pour les données (télechargement et traitement):
+prèrequis :
+
+- [python3](https://www.python.org/)
+- [podman](https://podman.io/)
+
+Grafana sur données education nationale niveau college
+
+Pour les données (téléchargement et traitement):
 
 ```shell
 python -m venv venv
@@ -11,3 +17,22 @@ pip install -r requirements.txt
 python data.py
 ```
 
+Grafana avec [podman](https://podman.io/) :
+
+construire image:
+
+```shell
+podman build -f Dockerfile -t piweb-grafana
+```
+
+Démarrage grafana :
+
+```shell
+podman-compose up -d
+```
+
+Arrêt grafana :
+
+```shell
+podman-compose down
+```
