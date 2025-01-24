@@ -36,3 +36,5 @@ Arrêt grafana :
 ```shell
 podman-compose down
 ```
+
+Allez sur votre [localhost port 4000](http:127.0.0.1:4000) et vous pouvez commencer à travailler sur les données.
