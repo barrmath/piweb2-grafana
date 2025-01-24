@@ -5,8 +5,6 @@ services:
     image: piweb-grafana
     container_name: grafana
     restart: unless-stopped
-    env_file:
-      - grafana.env
     volumes:
       - grafana:/var/lib/grafana
     ports:
