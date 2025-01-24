@@ -1,0 +1,11 @@
+volumes:
+  grafana:
+services:
+  grafana:
+    image: piweb-grafana
+    container_name: grafana
+    restart: unless-stopped
+    volumes:
+      - grafana:/var/lib/grafana
+    ports:
+     - '3000:3000'
