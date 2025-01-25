@@ -11,6 +11,13 @@ services:
       - grafanaV6
     ports:
      - '4000:3000'
+  db:
+    image: docker.io/mariadb
+    env_file: "db.env"
+    volumes:
+      - data:/var/lib/mysql
+    ports:
+      - "3306:3306"
 networks:
   grafanaV6:
     driver: bridge

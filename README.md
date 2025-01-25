@@ -1,21 +1,10 @@
 # piweb2-grafana
 
+Crée une base de donnée mariadDB ainsi que grafana
+
 prèrequis :
 
-- [python3](https://www.python.org/)
 - [podman](https://podman.io/)
-
-Grafana sur données education nationale niveau college
-
-Pour les données (téléchargement et traitement):
-
-```shell
-python -m venv venv
-source venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-python data.py
-```
 
 Grafana avec [podman](https://podman.io/) :
 
