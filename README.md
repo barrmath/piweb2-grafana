@@ -14,6 +14,20 @@ construire image:
 podman build -f Dockerfile -t piweb-grafana
 ```
 
+configurer votre DB avec db.env
+```shell
+touch db.env
+nano db.env
+```
+
+mettre vos mots de passe dans db.env
+```shell
+MYSQL_ROOT_PASSWORD=Root_password
+MYSQL_PASSWORD=password_user
+MYSQL_USER=USR
+MYSQL_DATABASE=DB_name
+```
+
 Démarrage grafana :
 
 ```shell
