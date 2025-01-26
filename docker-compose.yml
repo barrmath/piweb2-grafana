@@ -8,6 +8,8 @@ services:
     restart: unless-stopped
     volumes:
       - grafana:/var/lib/grafana
+    networks:
+      - bridge
     ports:
      - '4000:3000'
   db:
