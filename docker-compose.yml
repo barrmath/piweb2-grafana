@@ -8,8 +8,6 @@ services:
     restart: unless-stopped
     volumes:
       - grafana:/var/lib/grafana
-    networks:
-      - grafanaV6
     ports:
      - '4000:3000'
   db:
@@ -19,7 +17,4 @@ services:
       - data:/var/lib/mysql
     ports:
       - "3306:3306"
-networks:
-  grafanaV6:
-    driver: bridge
-    enable_ipv6: true
+
