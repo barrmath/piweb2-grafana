@@ -1,5 +1,6 @@
 volumes:
   grafana:
+  data:
 services:
   grafana:
     image: piweb-grafana
