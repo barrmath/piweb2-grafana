@@ -9,7 +9,7 @@ services:
     volumes:
       - grafana:/var/lib/grafana
     networks:
-      - bridge
+      - grafanaV6
     ports:
      - '4000:3000'
   db:
@@ -17,6 +17,10 @@ services:
     env_file: "db.env"
     volumes:
       - data:/var/lib/mysql
+    networks:
+      - grafanaV6
     ports:
       - "3306:3306"
-
+networks:
+  grafanaV6:
+    driver: bridge
