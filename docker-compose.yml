@@ -5,6 +5,7 @@ services:
   grafana:
     image: piweb-grafana
     container_name: grafana
+    env_file: "grafana.env"
     restart: unless-stopped
     volumes:
       - grafana:/var/lib/grafana
