@@ -3,7 +3,7 @@ volumes:
   data:
 services:
   grafana:
-    image: piweb-grafana
+    image: registry.hub.docker.com/grafana/grafana-oss:latest
     container_name: grafana
     env_file: "grafana.env"
     restart: unless-stopped
