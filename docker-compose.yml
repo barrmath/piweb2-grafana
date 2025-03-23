@@ -16,6 +16,7 @@ services:
   db:
     image: docker.io/mariadb
     env_file: "db.env"
+    restart: unless-stopped
     volumes:
       - data:/var/lib/mysql
     networks:
